@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>video js</title>
+</head>
+
+<body>
+  <!-- la façon la plus simple🔵 -->
+  <!-- <video src="videos\yt5s.io-[ 8K 60FPS ] _Acheron_ by Riot, Ryamu and More! (Extreme Demon) - Geometry Dash.mp4" controls autoplay loop muted></video> -->
+  
+  <!-- la façon faite en JS🔴 -->
+  <section class="sectionVideo">
+    <video id="video" class="video" autoplay loop>
+      <source src="videos\yt5s.io-[ 8K 60FPS ] _Acheron_ by Riot, Ryamu and More! (Extreme Demon) - Geometry Dash.mp4" type="video/mp4">
+      la vidéo ne se charge pas
+      </video>
+      <article class="background-grey">
+        <button class="btn-play-pause" id="btn-play-pause">||</button>
+        
+        <button class="buttonYellow" id="moins5">⇐</button>
+        <button class="buttonYellow" id="plus5">⇒</button>
+        
+        <progress id="progresse" value="0"></progress>
+
+        <button class="buttonRed" id="slow">≪</button>
+        <button class="buttonRed" id="quick">≫</button>
+
+        <button  class="buttonYellow" id="reset">↩</button>
+      </article>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+  
+</html>
